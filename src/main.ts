@@ -52,7 +52,7 @@ function newTask(task: string){
 
 
   const db = document.createElement("button")
-  db.textContent = "x"
+  db.textContent = "𝕏"
   db.setAttribute("class", "deleteBtn")
 
   db.addEventListener("click", () => {
