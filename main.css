@@ -1,0 +1,135 @@
+body{
+    background-color: #013237;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 10%;
+}
+
+h1{
+    font-size: 60px;
+    color: aliceblue;
+    padding: 8px;
+ 
+}
+.title{
+    background-color: #fe979c;
+    width: fit-content;
+    margin:auto;
+    border-radius: 10px;
+    box-shadow: 2px 3px 6px 2px rgb(228, 228, 228);
+}
+
+#inputField{
+    padding: 10px;
+    width: 20%;
+    border-radius: 10px;
+    background-color: #f2eaf6;
+    border-color: #fe979c;
+    border-width: 2px;
+}
+
+#inputField:hover{
+    background-color: #dcd4df;
+    box-shadow: 2px 2px 6px 2px white;
+}
+
+#addTask{
+    padding:10px;
+    border-radius: 10px;
+    background-color: #F5BCBA;
+    width: 50px;
+    border-color: #F5BCBA;
+    box-shadow: black;
+}
+
+#addTask:hover{
+    background-color: #e0b0ad;
+    /* box-shadow: 1px 1px 1px 1px #929292; */
+}
+
+
+.tasks{
+    background-color: #f3dcdc;
+    padding: 10px;
+    flex-direction: column;
+    width: 40%;
+    display: flex;
+    text-align: left;
+    /* padding-left: 20%; */
+     /* width: 200px; */
+    /* align-self: center;
+    justify-content: center;
+    justify-self: center; */
+    border-radius: 10px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: medium;
+    inline-size: 30%;
+    overflow-x: scroll;
+    padding-left: 45px;
+    margin-left: 30%;
+}
+
+.tasks:hover{
+    background-color: rgb(252, 164, 164);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tasks.notDone{
+    background-color: #f3dcdc;
+}
+
+.tasks.notDone:hover{
+    background-color: rgb(252, 164, 164);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tasks.done{
+    background-color :#dbc065;
+    text-decoration : line-through;
+    color: white;
+
+}
+
+.tasks.done:hover{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #dbb22a;
+}
+
+
+
+
+/* .lineThrough{
+    text-decoration: line-through;
+} */
+
+.deleteBtn{
+    right: 90px;
+    border-radius: 8px;
+    position: absolute;
+    margin-right: 25%;
+    background-color: #f6e8df;
+    border-color: #f6e8df;
+
+    height: 30px;
+    width: 30px;
+}
+
+.deleteBtn:hover{
+    background-color: #fa6863;
+    color: white;
+    border-color: #fa6863 ;
+}
+
+#i{
+    position: absolute;
+    display: flex;
+    justify-self: flex-start;
+    margin-top: 4px;
+    margin-left: -30px;
+    z-index: 100;
+    color: white;
+}
