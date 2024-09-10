@@ -1,18 +1,20 @@
 body{
-    background-color: #f0f0f0;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(121,104,14,1) 100%);
+    font-family: "Cormorant Garamond", serif;
     text-align: center;
     margin-top: 10%;
 }
 
-h1{
+h2{
     font-size: 60px;
     color: aliceblue;
     padding: 8px;
+    font-weight: 300;
  
 }
 .title{
-    background-color: #fe979c;
+    background-color: #dbb22a;
     width: fit-content;
     margin:auto;
     border-radius: 10px;
@@ -24,33 +26,35 @@ h1{
     width: 20%;
     border-radius: 10px;
     background-color: #f0f0f0;
-    border-color: #fe979c;
+    border-color: #dbb22a;
     border-width: 3px;
     
 }
 
 #inputField:hover{
     background-color: #e0dfdf;
-    box-shadow: 2px 2px 6px 2px rgb(143, 142, 142);
+    box-shadow: 2px 2px 6px 2px rgb(216, 216, 216);
 }
 
 #addTask{
     padding:10px;
     border-radius: 10px;
-    background-color: #F5BCBA;
+    background-color: #dbb22a;
     width: 50px;
-    border-color: #F5BCBA;
+    border-color: #dbb22a;
     box-shadow: black;
 }
 
 #addTask:hover{
-    background-color: #e0b0ad;
+    background-color: #f2c530;
+    border-color: #f2c530;
+    box-shadow: 2px 3px 6px 2px rgb(186, 185, 185);
     /* box-shadow: 1px 1px 1px 1px #929292; */
 }
 
 
 .tasks{
-    background-color: #f3dcdc;
+    background-color: white;
     padding: 10px;
     flex-direction: column;
     width: 40%;
@@ -71,23 +75,23 @@ h1{
 
 
 .tasks:hover{
-    background-color: rgb(240, 146, 146);
+    border-color: rgb(193, 193, 193);
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .tasks.notDone{
-    background-color: #f3dcdc;
+    background-color: white;
 }
 
 .tasks.notDone:hover{
-    background-color: rgb(240, 146, 146);
+    background-color:rgb(193, 193, 193) ;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .tasks.done{
-    background-color :#dbc065;
+    background-color :#dbb22a;
     text-decoration : line-through;
     color: white;
 
@@ -96,7 +100,7 @@ h1{
 .tasks.done:hover{
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: #dbb22a;
+    background-color: #f2c530;
 }
 
 
@@ -119,9 +123,9 @@ h1{
 }
 
 .deleteBtn:hover{
-    background-color: #fa6863;
+    background-color: #ce3411;
     color: white;
-    border-color: #fa6863 ;
+    border-color: #ce3411 ;
 }
 
 #i{
@@ -136,4 +140,61 @@ h1{
 
 .taskList{
     margin-top: 50px
-};
+}
+
+.list{
+    display: flex;
+}
+
+.time{
+    /* float: right; */
+    margin-left: auto;
+}
+
+#sortByDate{
+    background-color: #dbb22a;
+    border-color: #dbb22a;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#sortByDate:hover{
+    background-color: #f2c530;
+    border-color: #f2c530;
+    box-shadow: 2px 3px 6px 2px rgb(186, 185, 185);
+}
+
+#date{
+    border-color: #f2c530 ;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+#time{
+    border-color: #f2c530 ;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.expiredText{
+    color: white;
+
+}
+
+.container{
+    opacity: 10px;
+    background-color: #a78a2b00;
+    padding: 20px;
+    backdrop-filter: blur(0.3px);
+    border-top-right-radius: 300px;
+    border-top-left-radius: 300px;
+    box-shadow: 2px -10px 30px -10px rgb(255, 235, 171);
+}
+
+
+
+
