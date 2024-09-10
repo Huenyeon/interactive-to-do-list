@@ -49,7 +49,7 @@ h2{
     background-color: #f2c530;
     border-color: #f2c530;
     box-shadow: 2px 3px 6px 2px rgb(186, 185, 185);
-    /* box-shadow: 1px 1px 1px 1px #929292; */
+    
 }
 
 
@@ -57,18 +57,15 @@ h2{
     background-color: white;
     padding: 10px;
     flex-direction: column;
-    width: 40%;
+    width: 40%; 
     display: flex;
     text-align: left;
     border-radius: 10px;
-    margin-top: 3px;
-    margin-bottom: 3px;
+    margin: 5px auto; 
     font-size: medium;
-    inline-size: 30%;
     overflow-x: auto;
-    padding-left: 45px;
-    margin-left: 30%;
     word-wrap: break-word;
+    position: relative; 
 
 }
 
@@ -106,18 +103,13 @@ h2{
 
 
 
-/* .lineThrough{
-    text-decoration: line-through;
-} */
-
 .deleteBtn{
-    right: 90px;
     border-radius: 8px;
     position: absolute;
-    margin-right: 25%;
+    right: 10px; 
+    top: 10px; 
     background-color: #f6e8df;
     border-color: #f6e8df;
-
     height: 30px;
     width: 30px;
 }
@@ -139,7 +131,10 @@ h2{
 }
 
 .taskList{
-    margin-top: 50px
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 50px;
 }
 
 .list{
@@ -147,7 +142,6 @@ h2{
 }
 
 .time{
-    /* float: right; */
     margin-left: auto;
 }
 
