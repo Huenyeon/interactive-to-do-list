@@ -90,6 +90,10 @@ function render(toDoTask: ToDoListTask){
   list.setAttribute("class", "tasks")
   taskList.setAttribute("class", "taskList")
   spanTime.setAttribute("class", "time")
+
+  if (!toDoTask.date || !toDoTask.time) {
+    return;
+  }
   
 
   
