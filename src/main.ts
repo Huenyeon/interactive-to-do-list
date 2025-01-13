@@ -42,7 +42,7 @@ ab?.addEventListener("click", () => {
     input.style.borderColor = "red";
     time.style.borderColor = "red"
     date.style.borderColor = "red";
-    
+      
   } if (task === ""){
     alert("Please input your task")
   } if (sortingDate === ""){
